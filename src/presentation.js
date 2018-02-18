@@ -1,5 +1,5 @@
 // Import React
-import React from 'react';
+import React from 'react'
 
 // Import Spectacle Core tags
 import {
@@ -11,30 +11,30 @@ import {
   List,
   Quote,
   Slide,
-  Text,
-} from 'spectacle';
+  Text
+} from 'spectacle'
 
 // Import theme
-import createTheme from 'spectacle/lib/themes/default';
+import createTheme from 'spectacle/lib/themes/default'
 
 // Require CSS
-require('normalize.css');
+require('normalize.css')
 
 const theme = createTheme(
   {
     primary: 'white',
     secondary: '#1F2022',
     tertiary: '#03A9FC',
-    quartenary: '#CECECE',
+    quartenary: '#CECECE'
   },
   {
     primary: 'Montserrat',
-    secondary: 'Helvetica',
+    secondary: 'Helvetica'
   }
-);
+)
 
 export default class Presentation extends React.Component {
-  render() {
+  render () {
     return (
       <Deck
         transition={['zoom', 'slide']}
@@ -49,6 +49,7 @@ export default class Presentation extends React.Component {
             open the presentation/index.js file to get started
           </Text>
         </Slide>
+
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>
             Typography
@@ -72,6 +73,7 @@ export default class Presentation extends React.Component {
             Standard text
           </Text>
         </Slide>
+
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
             Standard List
@@ -83,6 +85,7 @@ export default class Presentation extends React.Component {
             <ListItem>Item 4</ListItem>
           </List>
         </Slide>
+
         <Slide transition={['fade']} bgColor="secondary" textColor="primary">
           <BlockQuote>
             <Quote>Example Quote</Quote>
@@ -90,6 +93,6 @@ export default class Presentation extends React.Component {
           </BlockQuote>
         </Slide>
       </Deck>
-    );
+    )
   }
 }
